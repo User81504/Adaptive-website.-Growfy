@@ -38,6 +38,8 @@ a {
 
 .page__clients {
 }
+.page__services {
+}
 
 .button {
     display: inline-block;
@@ -72,9 +74,16 @@ a {
     }
 }
 
+.title {
+    font-weight: 500;
+    font-size: 51px;
+    line-height: 1.19;
+    color: #fff;
+}
 
 .text {
     line-height: 1.5; /* 24/16 */
+    color: #81818b;
 } 
 
 .text_big {
@@ -82,6 +91,19 @@ a {
     color: #9c9c9c;
 }
 
+.label {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid rgb(129, 129, 139, 0.2);
+    border-radius: 12px;
+
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #9C9C9C;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
 
 
@@ -524,5 +546,112 @@ a {
     .clients {
         padding-top: 30px;
         padding-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ! SERVICES */
+
+
+
+.services {
+    margin-top: 60px;
+}
+.services__container {
+    display: flex;
+    justify-content: space-between;
+}
+.services__content {
+    align-self: center;
+}
+.services__label {
+    margin-bottom: 19px;
+}
+.services__title {
+    margin-bottom: 12px;
+}
+.services__text, .services__text p {
+    max-width: 490px;
+    margin-bottom: 33px;
+    line-height: 1.5;
+}
+.services__button {
+}
+.services__cards {
+    flex: 0 1 50%;
+    display: flex;
+    gap: 32px;
+}
+.services__column {
+}
+.services__column:nth-child(1) {
+    padding-top: 48px;
+}
+
+
+.services__item  {
+}
+.services__item:not(:last-child)  {
+    margin-bottom: 32px;
+}
+
+.item-service {
+    background: rgba(129, 129, 139, 0.1);
+    border-radius: 30px;
+    padding: 55px 25px 60px 25px;
+}
+
+.item-service__icon {
+    margin-bottom: 16px;
+}
+.item-service__title {
+    font-size: 19px;
+    line-height: 1.4;
+    color: #FFFFFF;
+
+    margin-bottom: 10px;
+}
+.item-service__text {
+}
+
+
+
+@media (max-width: 1100px) {
+    .services__container {
+        flex-direction: column;
+    }
+    .services__cards {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .services {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .services {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 620px) {
+    .services__cards {
+        flex-direction: column;
+    }
+    .item-service {
+        padding: 30px 25px 30px 25px;
     }
 }
