@@ -24,7 +24,7 @@ a {
     overflow: clip;
 }
 
-[class*="__container"] {
+[class*="__container"] {  /* ! FEATURE */
     max-width: 1310px;
     margin: 0 auto;
     padding: 0 15px;
@@ -330,8 +330,8 @@ a {
 }
 
 @media (max-width: 559.98px) {
-    .header__logo {
-        /* * ЭТО ВООБЩЕ ЧИТ!!! При достижении этого медиа-квери, ширина лого сокращается, но сама картинка отсается целой, но использовав св-во overflow - мы обрезаем в нашем случае текст в логотипе, оставляя лишь имг */
+    .header__logo { /* ! FEATURE */
+        /* * ЭТО ВООБЩЕ ЧИТ!!! При достижении этого медиа-квери, ширина лого сокращается, но сама картинка отсается целой, но использовав св-во overflow - мы обрезаем в нашем случае текст в логотипе, оставляя лишь имг */ 
         width: 32px;
         flex: 0 0 32px;
         overflow: hidden;
@@ -385,7 +385,7 @@ a {
     position: absolute;
     top: 107px;
     left: -31px;
-    background: url(/img/main/decor.svg) center / 100% no-repeat;
+    background: url(/img/decor.svg) center / 100% no-repeat;
     width: 122px;
     height: 122px;
 }
@@ -460,11 +460,12 @@ a {
         /* 90px+30px */
         padding-bottom: 60px;
     }
-    .main__title {
+
+    .title {
         font-size: 44px;
     }
-    .main__text {
-        font-size: 24px;
+    .text_big {
+        font-size: 18px;
     }
 }
 
@@ -481,7 +482,7 @@ a {
         align-content: stretch;
         padding-top: 20px;
     }
-    .main__title {
+    .title {
         font-size: 32px;
         margin-bottom: 15px;
     }
@@ -562,7 +563,8 @@ a {
 
 
 .services {
-    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 100px;
 }
 .services__container {
     display: flex;
@@ -653,5 +655,124 @@ a {
     }
     .item-service {
         padding: 30px 25px 30px 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ! WHY */
+
+
+
+
+.why {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.why__container {
+    display: flex;
+    gap: 64px;
+}
+.why__images {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+
+    align-self: center;
+}
+.why__images::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: -13px;
+    background: url(/img/decor.svg) center / 100% no-repeat;
+    width: 122px;
+    height: 122px;
+    z-index: -1;
+}
+.images-why__item_1 {
+    border-radius: 678px 0px 378px 378px;
+}
+.images-why__item_2 {
+    border-radius: 182px 182px 182px 0px;
+}
+.images-why__item {
+    overflow: hidden;
+}
+.images-why__item img {
+    max-width: 100%;
+}
+.why__content {
+    align-self: center;
+}
+.why__label {
+    margin-bottom: 43px;
+}
+.label {
+}
+.why__title {
+    margin-bottom: 40px;
+    max-width: 560px;
+}
+
+.why__text {
+    margin-bottom: 39px;
+    max-width: 491px;
+}
+.why__text p {
+    line-height: 1.5;
+}
+.why__ul {
+}
+.why__ul__li {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.why__ul__li:not(:last-child) {
+    margin-bottom: 25px;
+}
+.why__ul__li::before {
+    content: url(/img/why/check.svg);
+    top: calc(50% - 5px); /* * Так как высота имаге 10px, я беру 50% и отнимаю половину имаги чтобы вычислить центр  */
+    left: 0;
+    padding: 5px 9px;
+    margin-right: 10px;
+    background: rgba(129, 129, 139, 0.1);
+    border-radius: 32px;
+}
+
+
+
+
+@media (max-width: 991.98px) {
+    .why {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .why {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .why__container {
+        flex-direction: column-reverse;
+    }
+    .images-why{
+        max-width: 70%;
+    }
+    .why__label {
+        margin-bottom: 19px;
     }
 }
