@@ -116,6 +116,8 @@ a {
     top: 0;
     left: 0;
     background: rgba(13, 13, 17, 0.9);
+
+    z-index: 5;
 }
 
 .header__container {
