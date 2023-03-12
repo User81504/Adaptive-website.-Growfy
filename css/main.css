@@ -24,7 +24,8 @@ a {
     overflow: clip;
 }
 
-[class*="__container"] {  /* ! FEATURE */
+[class*="__container"] {
+    /* ! FEATURE */
     max-width: 1310px;
     margin: 0 auto;
     padding: 0 15px;
@@ -36,10 +37,9 @@ a {
 
 .page__main {}
 
-.page__clients {
-}
-.page__services {
-}
+.page__clients {}
+
+.page__services {}
 
 .button {
     display: inline-block;
@@ -64,6 +64,7 @@ a {
 .button_dark {
     background: rgba(129, 129, 139, 0.2);
 }
+
 .button_dark:hover {
     background: rgb(90, 90, 99, 0.2);
 }
@@ -82,9 +83,10 @@ a {
 }
 
 .text {
-    line-height: 1.5; /* 24/16 */
+    line-height: 1.5;
+    /* 24/16 */
     color: #81818b;
-} 
+}
 
 .text_big {
     font-size: 18px;
@@ -332,8 +334,9 @@ a {
 }
 
 @media (max-width: 559.98px) {
-    .header__logo { /* ! FEATURE */
-        /* * ЭТО ВООБЩЕ ЧИТ!!! При достижении этого медиа-квери, ширина лого сокращается, но сама картинка отсается целой, но использовав св-во overflow - мы обрезаем в нашем случае текст в логотипе, оставляя лишь имг */ 
+    .header__logo {
+        /* ! FEATURE */
+        /* * ЭТО ВООБЩЕ ЧИТ!!! При достижении этого медиа-квери, ширина лого сокращается, но сама картинка отсается целой, но использовав св-во overflow - мы обрезаем в нашем случае текст в логотипе, оставляя лишь имг */
         width: 32px;
         flex: 0 0 32px;
         overflow: hidden;
@@ -354,6 +357,7 @@ a {
         background: url("/img/cart.svg") center/ 45px 40px no-repeat;
         border-radius: 0;
     }
+
     .header__menu {}
 }
 
@@ -403,12 +407,14 @@ a {
     margin-bottom: 28px;
 }
 
-.main__text, .main__text p {
+.main__text,
+.main__text p {
     font-weight: 300;
     font-size: 18px;
     max-width: 491px;
     color: #9c9c9c;
-    line-height: 1.5; /* 27px/18 */
+    line-height: 1.5;
+    /* 27px/18 */
     margin-bottom: 33px;
 }
 
@@ -466,6 +472,7 @@ a {
     .title {
         font-size: 44px;
     }
+
     .text_big {
         font-size: 18px;
     }
@@ -476,19 +483,24 @@ a {
         padding-top: 100px;
         padding-bottom: 30px;
     }
+
     .main__container {
         flex-direction: column;
         justify-content: flex-start;
     }
+
     .main__content {
         align-content: stretch;
         padding-top: 20px;
     }
+
     .title {
         font-size: 32px;
         margin-bottom: 15px;
     }
-    .main__text, .main__text p {
+
+    .main__text,
+    .main__text p {
         margin-bottom: 15px;
     }
 }
@@ -510,8 +522,9 @@ a {
     padding-top: 100px;
     padding-bottom: 80px;
 }
-.clients__container {
-}
+
+.clients__container {}
+
 .clients__title {
     text-align: center;
     text-transform: uppercase;
@@ -523,6 +536,7 @@ a {
 
     margin-bottom: 44px;
 }
+
 .clients__items {
     display: flex;
     flex-wrap: wrap;
@@ -530,8 +544,9 @@ a {
     justify-content: center;
     gap: 30px;
 }
-.clients__item {
-}
+
+.clients__item {}
+
 .clients__item img {
     max-width: 100%;
 }
@@ -541,10 +556,12 @@ a {
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
     .clients__title {
         margin-bottom: 30px;
     }
 }
+
 @media (max-width: 767.98px) {
     .clients {
         padding-top: 30px;
@@ -568,41 +585,49 @@ a {
     padding-top: 60px;
     padding-bottom: 100px;
 }
+
 .services__container {
     display: flex;
     justify-content: space-between;
 }
+
 .services__content {
     align-self: center;
 }
+
 .services__label {
     margin-bottom: 19px;
 }
+
 .services__title {
     margin-bottom: 12px;
 }
-.services__text, .services__text p {
+
+.services__text,
+.services__text p {
     max-width: 490px;
     margin-bottom: 33px;
     line-height: 1.5;
 }
-.services__button {
-}
+
+.services__button {}
+
 .services__cards {
     flex: 0 1 50%;
     display: flex;
     gap: 32px;
 }
-.services__column {
-}
+
+.services__column {}
+
 .services__column:nth-child(1) {
     padding-top: 48px;
 }
 
 
-.services__item  {
-}
-.services__item:not(:last-child)  {
+.services__item {}
+
+.services__item:not(:last-child) {
     margin-bottom: 32px;
 }
 
@@ -615,6 +640,7 @@ a {
 .item-service__icon {
     margin-bottom: 16px;
 }
+
 .item-service__title {
     font-size: 19px;
     line-height: 1.4;
@@ -622,8 +648,8 @@ a {
 
     margin-bottom: 10px;
 }
-.item-service__text {
-}
+
+.item-service__text {}
 
 
 
@@ -631,6 +657,7 @@ a {
     .services__container {
         flex-direction: column;
     }
+
     .services__cards {
         margin-top: 15px;
     }
@@ -655,6 +682,7 @@ a {
     .services__cards {
         flex-direction: column;
     }
+
     .item-service {
         padding: 30px 25px 30px 25px;
     }
@@ -678,10 +706,12 @@ a {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .why__container {
     display: flex;
     gap: 64px;
 }
+
 .why__images {
     display: flex;
     align-items: flex-end;
@@ -689,6 +719,7 @@ a {
 
     align-self: center;
 }
+
 .why__images::before {
     content: "";
     position: absolute;
@@ -699,26 +730,33 @@ a {
     height: 122px;
     z-index: -1;
 }
+
 .images-why__item_1 {
     border-radius: 678px 0px 378px 378px;
 }
+
 .images-why__item_2 {
     border-radius: 182px 182px 182px 0px;
 }
+
 .images-why__item {
     overflow: hidden;
 }
+
 .images-why__item img {
     max-width: 100%;
 }
+
 .why__content {
     align-self: center;
 }
+
 .why__label {
     margin-bottom: 43px;
 }
-.label {
-}
+
+.label {}
+
 .why__title {
     margin-bottom: 40px;
     max-width: 560px;
@@ -728,22 +766,27 @@ a {
     margin-bottom: 39px;
     max-width: 491px;
 }
+
 .why__text p {
     line-height: 1.5;
 }
-.why__ul {
-}
+
+.why__ul {}
+
 .why__ul__li {
     font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
 }
+
 .why__ul__li:not(:last-child) {
     margin-bottom: 25px;
 }
+
 .why__ul__li::before {
     content: url(/img/why/check.svg);
-    top: calc(50% - 5px); /* * Так как высота имаге 10px, я беру 50% и отнимаю половину имаги чтобы вычислить центр  */
+    top: calc(50% - 5px);
+    /* * Так как высота имаге 10px, я беру 50% и отнимаю половину имаги чтобы вычислить центр  */
     left: 0;
     padding: 5px 9px;
     margin-right: 10px;
@@ -771,9 +814,11 @@ a {
     .why__container {
         flex-direction: column-reverse;
     }
-    .images-why{
+
+    .images-why {
         max-width: 80%;
     }
+
     .why__label {
         margin-bottom: 19px;
     }
@@ -794,41 +839,51 @@ a {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .stats__container {
     display: flex;
     gap: 32px;
 }
+
 .stats__column {
     display: flex;
     flex-direction: column;
 }
+
 .stats__cards {
     display: flex;
     flex: 0 1 66%;
     gap: 32px;
 }
+
 .cards__item {
     padding: 44px 71px 51px 40px;
 }
+
 .cards__item:nth-child(1) {
     margin-bottom: 32px;
 }
+
 .item-cards {
     background: rgba(129, 129, 139, 0.1);
     border-radius: 30px;
 }
+
 .item-cards__title {
     line-height: 1.2;
     margin-bottom: 32px;
 }
+
 .item-cards__subtitle {
     line-height: 1.5;
 }
+
 .stats__img {
     border-radius: 0px 448px 378px 378px;
     overflow: hidden;
     align-self: center;
 }
+
 .stats__img img {
     max-width: 100%;
 }
@@ -842,6 +897,7 @@ a {
     .stats__img {
         align-self: center;
     }
+
     .cards__item {
         padding: 44px 26px 51px 40px;
     }
@@ -859,21 +915,24 @@ a {
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
     .item-cards__title {
         margin-bottom: 14px;
     }
-    
+
 }
 
 @media (max-width: 620px) {
     .stats__cards {
         flex-direction: column;
     }
-    .cards__item  {
+
+    .cards__item {
         padding: 30px 25px 30px 25px;
     }
-    .stats__img {
-    }
+
+    .stats__img {}
+
     .stats__img {
         max-width: 80%;
     }
@@ -895,25 +954,29 @@ a {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .testimonials__content {
     margin-bottom: 64px;
     display: flex;
     justify-content: space-between;
 }
-.testimonials__main {
-    
-}
+
+.testimonials__main {}
+
 .testimonials__label {
     margin-bottom: 25px;
 }
+
 .testimonials__title {
     margin-bottom: 12px;
 }
+
 .testimonials__text,
 .testimonials__text p {
     max-width: 736px;
     line-height: 1.5;
 }
+
 .testimonials__button {
     align-self: flex-end;
 }
@@ -924,6 +987,7 @@ a {
     display: flex;
     gap: 48px;
 }
+
 .testimonials__item {
     background: rgba(129, 129, 139, 0.1);
     border-radius: 30px;
@@ -933,10 +997,12 @@ a {
     display: flex;
     flex-direction: column;
 }
+
 .person-testimonials {
     display: flex;
     margin-bottom: 33px;
 }
+
 .person-testimonials__avatar {
     overflow: hidden;
 }
@@ -944,9 +1010,11 @@ a {
 .person-testimonials__avatar_1 {
     border-radius: 0px 68px 68px 68px;
 }
+
 .person-testimonials__avatar_2 {
     border-radius: 68px 0px 68px 68px;
 }
+
 .person-testimonials__avatar_3 {
     border-radius: 68px 68px 0px 68px;
 }
@@ -955,6 +1023,7 @@ a {
     align-self: center;
     margin-left: 16px;
 }
+
 .person-testimonials__name {
     font-weight: 300;
     font-size: 16px;
@@ -963,6 +1032,7 @@ a {
 
     margin-bottom: 7px;
 }
+
 .person-testimonials__company {
     font-size: 14px;
     line-height: 1.6;
@@ -975,7 +1045,8 @@ a {
 
     margin-bottom: 34px;
 }
-.item-testimonials__text, 
+
+.item-testimonials__text,
 .item-testimonials__text p {
     color: #9C9C9C;
     font-weight: 300;
@@ -984,8 +1055,8 @@ a {
     flex: 1 1 auto;
     margin-bottom: 34px;
 }
-.item-testimonials__quality {
-}
+
+.item-testimonials__quality {}
 
 
 
@@ -993,25 +1064,32 @@ a {
     .testimonials__content {
         display: block;
     }
+
     .testimonials__main {
         margin-bottom: 30px;
     }
+
     .testimonials__text {
         padding-right: 40px;
     }
+
     .testimonials__cards {
         flex-direction: column;
         gap: 32px;
     }
+
     .testimonials__item {
         padding: 44px 23px 44px 40px;
     }
+
     .person-testimonials {
         margin-bottom: 20px;
     }
+
     .item-testimonials__title {
         margin-bottom: 15px;
     }
+
     .item-testimonials__text {
         max-width: 800px;
     }
@@ -1033,9 +1111,11 @@ a {
     .testimonials__content {
         margin-bottom: 54px;
     }
+
     .item-testimonials__title {
         font-size: 24px;
     }
+
     .item-testimonials__text {
         margin-bottom: 20px;
     }
