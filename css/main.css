@@ -35,11 +35,27 @@ a {
     flex: 1 1 auto;
 }
 
+/* ? NAVIGATION ON SECTIONS */
+
 .page__main {}
 
 .page__clients {}
 
 .page__services {}
+
+.page__why {}
+
+.page__stats {}
+
+.page__testimonials {}
+
+.page__blog {}
+
+.page__footer {}
+
+
+
+
 
 .button {
     display: inline-block;
